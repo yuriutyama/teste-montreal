@@ -1,0 +1,6 @@
+@TesteMonterealAPI_HostAddress = http://localhost:5029
+
+GET {{TesteMonterealAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
