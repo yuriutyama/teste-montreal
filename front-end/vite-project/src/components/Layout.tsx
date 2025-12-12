@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="app-shell">
       <header className="app-header">
-        <h1>Biblioteca</h1>
+        <h1>Teste Montreal</h1>
         <nav>
           <NavLink to="/livros" className="nav-link">
             Livros
@@ -26,4 +26,3 @@ export default function Layout({ children }: LayoutProps) {
     </div>
   );
 }
-

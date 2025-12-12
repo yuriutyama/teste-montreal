@@ -64,7 +64,13 @@ export default function LivroFormPage() {
     setStatus("");
 
     if (!form.autorId || !form.generoId) {
-      setStatus("Selecione um autor e um gênero.");
+      setStatus("Selecione um autor.");
+      setSaving(false);
+      return;
+    }
+
+    if (!form.generoId) {
+      setStatus("Selecione um gênero.");
       setSaving(false);
       return;
     }
@@ -161,4 +167,3 @@ export default function LivroFormPage() {
     </section>
   );
 }
-
